@@ -13,6 +13,6 @@ public class TestExam {
         Triangle tri = new Triangle(500, "pink", 3, 4, 5);
         shapeArray.add(tri);
 
-        ReadFromFile read = new ReadFromFile();
+        ShapeUI shapeUI = new ShapeUI();
     }
 }

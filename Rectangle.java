@@ -23,7 +23,7 @@ public class Rectangle implements Shape{
 
     @Override
     public String getDetailString() {
-        String str = toString() + "\n" + "Color: " + getColor() + "\n" + "Length: " + Integer.toString(length) + "\n" + "width: " + Integer.toString(width) + "\n" + "Area: " + Double.toString(getArea()) + "\n" + "Perimeter: " + Double.toString( getPerimeter());
+        String str = "<html>" + toString() + "<br>" + "Color: " + getColor() + "<br>" + "Length: " + Integer.toString(length) + "<br>" + "width: " + Integer.toString(width) + "<br>" + "Area: " + Double.toString(getArea()) + "<br>" + "Perimeter: " + Double.toString( getPerimeter()) + "</html>";
         return str;
     }
 

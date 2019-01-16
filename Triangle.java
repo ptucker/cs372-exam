@@ -27,7 +27,7 @@ public class Triangle implements Shape{
 
     @Override
     public String getDetailString() {
-        String str = toString() + "\n" + "Color: " + getColor() + "\n" + "Side1: " + Integer.toString(side1) + "\n" + "Side2: " + Integer.toString(side2) + "\n" + "Side3: " + Integer.toString(side3) + "\n"+ "Area: " + Double.toString(getArea()) + "\n" + "Perimeter: " + Double.toString( getPerimeter());
+        String str = "<html>"+ toString() + "<br>" + "Color: " + getColor() + "<br>" + "Side1: " + Integer.toString(side1) + "<br>" + "Side2: " + Integer.toString(side2) + "<br>" + "Side3: " + Integer.toString(side3) + "<br>"+ "Area: " + Double.toString(getArea()) + "<br>" + "Perimeter: " + Double.toString( getPerimeter()) + "</html>";
         return str;
     }
 

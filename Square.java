@@ -21,7 +21,7 @@ public class Square implements Shape {
 
     @Override
     public String getDetailString() {
-        String str = toString() + "\n" + "Color: " + getColor() + "\n"  + "width: " + Integer.toString(width) + "\n" + "Area: " + Double.toString(getArea()) + "\n" + "Perimeter: " + Double.toString( getPerimeter());
+        String str = "<html>"+toString() + "<br>" + "Color: " + getColor() + "<br>"  + "width: " + Integer.toString(width) + "<br>" + "Area: " + Double.toString(getArea()) + "<br>" + "Perimeter: " + Double.toString( getPerimeter()) + "</html>";
         return str;
     }
 

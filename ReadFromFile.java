@@ -3,7 +3,7 @@ import java.util.Scanner;
 import java.util.ArrayList;
 
 public class ReadFromFile {
-    ArrayList<Object> shapesArray = new ArrayList<Object>();
+    ArrayList<Shape> shapesArray = new ArrayList<Shape>();
 
     public ReadFromFile() {
         //String curdir = System.get
@@ -44,7 +44,7 @@ public class ReadFromFile {
                             Circle circle = new Circle(id, color, radius);
                             shapesArray.add(circle);
 
-                        //for rectangle class creatation
+                        //for rectangle class creation
                         } else if( str.substring(0,i).equals("rectangle")) {
                             int id = 0;
                             int length = 0;
@@ -131,10 +131,13 @@ public class ReadFromFile {
             System.out.println("this failed " + e.getMessage() + " " + e.getCause());
         }
     }
-    /*
-    public ArrayList getArrayList() {
 
+    //returns shape 
+    public Shape getShape(int i) {
+        return shapesArray.get(i);
     }
-    */
+    public int getSize() {
+        return shapesArray.size();
+    } 
 
 }

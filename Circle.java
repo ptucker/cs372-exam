@@ -24,7 +24,7 @@ public class Circle implements Shape {
 
     @Override
     public String getDetailString() {
-        String str = toString() + "\n" + "Color: " + getColor() + "\n" + "Radius: " + Integer.toString(radius) + "\n" + "Area: " + Double.toString(getArea()) + "\n" + "Perimeter: " + Double.toString( getPerimeter());
+        String str = "<html>" + toString() + "<br>" + "Color: " + getColor() + "<br>" + "Radius: " + Integer.toString(radius) + "<br>" + "Area: " + Double.toString(getArea()) + "<br>" + "Perimeter: " + Double.toString( getPerimeter()) +  "</html>";
         return str;
     }
 
